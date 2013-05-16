@@ -1,0 +1,1 @@
+Liferay.Service.register("Liferay.Service.SD", "com.lftechnology.hotel.service", "HotelOwner-portlet");

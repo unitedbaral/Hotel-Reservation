@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.lftechnology.hotel.model.Room">
+		<field name="roomId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="roomno" type="long" />
+		<field name="location" type="String" />
+		<field name="roomtypeId" type="long" />
+	</model>
+	<model name="com.lftechnology.hotel.model.RoomType">
+		<field name="roomtypeId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="description" type="String" />
+		<field name="pricepernight" type="Date" />
+	</model>
+</model-hints>

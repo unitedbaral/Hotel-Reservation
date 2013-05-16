@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.lftechnology.hotel.service.RoomLocalService" class="com.lftechnology.hotel.service.impl.RoomLocalServiceImpl" />
+	<bean id="com.lftechnology.hotel.service.RoomService" class="com.lftechnology.hotel.service.impl.RoomServiceImpl" />
+	<bean id="com.lftechnology.hotel.service.persistence.RoomPersistence" class="com.lftechnology.hotel.service.persistence.RoomPersistenceImpl" parent="basePersistence" />
+	<bean id="com.lftechnology.hotel.service.RoomTypeLocalService" class="com.lftechnology.hotel.service.impl.RoomTypeLocalServiceImpl" />
+	<bean id="com.lftechnology.hotel.service.RoomTypeService" class="com.lftechnology.hotel.service.impl.RoomTypeServiceImpl" />
+	<bean id="com.lftechnology.hotel.service.persistence.RoomTypePersistence" class="com.lftechnology.hotel.service.persistence.RoomTypePersistenceImpl" parent="basePersistence" />
+</beans>

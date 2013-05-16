@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.lftechnology.hotel.model.impl.RoomModelImpl">
+		<attributes>
+			<id name="roomId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="roomno" />
+			<basic name="location" />
+			<basic name="roomtypeId" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.lftechnology.hotel.model.impl.RoomTypeModelImpl">
+		<attributes>
+			<id name="roomtypeId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="description" />
+			<basic name="pricepernight">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.lftechnology.hotel.model.impl.RoomImpl" name="Room">
+		<table name="SD_Room" />
+		<attributes />
+	</entity>
+	<entity class="com.lftechnology.hotel.model.impl.RoomTypeImpl" name="RoomType">
+		<table name="SD_RoomType" />
+		<attributes />
+	</entity>
+</entity-mappings>
